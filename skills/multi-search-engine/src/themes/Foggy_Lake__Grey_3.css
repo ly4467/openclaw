@@ -1,0 +1,8 @@
+body {
+    --header-bg-cl: rgba(127, 156, 247, 0.23);
+
+}
+
+.btns_copypaste_img {
+    filter: grayscale(50%) brightness(1.2);
+}

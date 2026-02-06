@@ -1,0 +1,19 @@
+body {
+    --bg-cl: #d9d9d9;
+    
+    --engine-tr-bg-cl: #e6e3e3;
+    --engine-tr-hover-bg-cl: #d0dfe6;
+
+    --cata-btns-highlight-bg-cl: #eeeeee;
+
+        
+    --gobutton-bg-cl: #d0d0d0;
+
+    --hist-item-hover-bg-cl: white;
+}
+
+
+#engines_cont {
+    background-color: #e3e3e3;
+}
+

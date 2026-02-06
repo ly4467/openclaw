@@ -1,0 +1,106 @@
+/*
+ * Big Search (大术专搜)
+ *     https://github.com/garywill/BigSearch
+ *     https://addons.mozilla.org/firefox/addon/big-search/
+ *     https://chrome.google.com/webstore/detail/big-search/ojcnjeigmgjaiolalpapfnmmhdmpjhfb
+ * 
+ * Licensed under AGPL (GNU Affero General Public License)
+ */
+.addon {
+    
+    --desktop-mobile-cont-height: 0px;
+
+}
+
+body {
+    
+
+}
+
+
+
+#desktop_mobile_cont { display:none;}
+
+#corner_icons_cont {
+/*     display: none; */
+    
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    z-index: 3; 
+}
+.btns_corner , 
+.btns_cornerbtn_img {
+    width:  var(--btns-below-input-height) ;
+    height: var(--btns-below-input-height);
+}
+.btns_corner {
+    position: relative;
+}
+.span_cornerbtntip_cont {
+    position: absolute;
+    display: none;
+}
+.btns_corner:hover .span_cornerbtntip_cont {
+    display: unset;
+} 
+.span_cornerbtntip {
+    display: block;
+    position: absolute;
+    word-break: keep-all;
+    white-space: nowrap;
+    pointer-events: none;
+    color: blue;
+    
+    top: calc( 0px - var(--btns-below-input-height) );   
+    right: 0px;
+    text-align: right;
+}
+.span_cornerbtntip , .span_cornerbtntip *{
+    background-color: rgba(255,255,255, 0.7);
+} 
+
+#intitle { text-align: center; }
+
+#inputpaste { display:unset; }
+
+
+
+#hist_td{  
+    padding-top:0px; 
+}
+#hist div .hist_entry_span_buttons { right: 0; }
+
+#hist { 
+}
+#hist_tip { display:block;}
+#hist div .hist_entry_span_buttons { font-size: 10px; } 
+#td_gap_hist_right {
+    min-width: 10px;
+}
+
+
+#btmbtns {padding-top: 0px; }
+
+/* .btmemoji , */
+#hot_badge { 
+    display:none; 
+    
+}
+
+#btn_webext,
+#btn_editgui{ 
+    display:none;
+}
+
+
+.btm_dialog {
+    max-height: 70vh;
+}
+
+#footer { 
+/*     font-size: 6px; */
+    font-size: 12px;
+    transform: scale(0.6);
+    transform-origin: right bottom;
+}

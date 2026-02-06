@@ -1,0 +1,70 @@
+body.sidebar {
+    --intitle-height: 0px;
+    --tdgap: 0px;
+    --btns-copypaste-gap: 0px;
+}
+
+#corner_icons_cont {
+    top: unset;
+    right: unset;
+    bottom: calc( 0px - var(--bottom-padding-top) );
+    left: 0px;
+}
+#cornerbtn_opensidebar { display: none; }
+.span_cornerbtntip_cont {
+    right: unset;
+    left: 0px;
+}
+.span_cornerbtntip {
+    text-align: left;
+    right: unset;
+    left: 0px;
+}
+
+#catas_cont { 
+    padding-top:0px; padding-right: 0px; 
+    
+} 
+
+#catabtns_header , 
+#intitle
+{ display:none;}
+
+
+#btn_ml_input, #btn_save_ml, #btn_save_ml_sl {
+    width: unset;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#engines_table * {
+    word-wrap: break-word;
+    word-break: break-word;
+    line-break: anywhere;
+}
+.labelrow td {
+    padding: unset;
+    text-align: center;
+    font-size: clamp(13px, 2.7vw + 7px, 15px);
+
+}
+.engine_tr {
+    font-size: clamp(12px, 2.7vw + 7px, 16px);
+}
+.gobutton {
+    font-size: clamp(13px, 2.7vw + 7px, 16px);
+}
+
+
+.btm_dialog {
+    max-height: 70vh;
+}
+
+/* #bottom, */
+.btmbtn:not(#btn_randomtheme, #btn_theme), 
+#footer, #td_gap_hist_right, #td_gap_hist_left {
+    display: none;
+}
+
+
+

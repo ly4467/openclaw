@@ -1,0 +1,75 @@
+/*
+ * Big Search (大术专搜)
+ *     https://github.com/garywill/BigSearch
+ *     https://addons.mozilla.org/firefox/addon/big-search/
+ *     https://chrome.google.com/webstore/detail/big-search/ojcnjeigmgjaiolalpapfnmmhdmpjhfb
+ * 
+ * Licensed under AGPL (GNU Affero General Public License)
+ */
+
+body {
+    --bg-cl: #d9d9d9;
+    
+    --header-bg-cl: #9b9a9a;
+    --header-text-cl: white;
+    
+    --intitle-cl: #616161;
+    
+    --cata-btns-cl: #575757;
+    --cata-btns-highlight-bg-cl: #eeeeee;
+
+    
+    --labelrow-bg-cl: #858585;
+    --labelrow-cl: white;
+    
+    --engine-tr-bg-cl: #616161;
+    --engine-tr-hover-bg-cl: #008800;
+    
+    --ename-weight: bold; 
+    --enginename-td-cl: orange;
+    --enginename-td-cl-when-tr-hover: var(--enginename-td-cl);
+    
+    --ebtns-weight: unset;
+    --gobutton-cl: white;
+    --gobutton-cl-hover: black;
+    --gobutton-cl-when-tr-hover: var(--gobutton-cl);
+    
+    --gobutton-bg-cl: transparent;
+    --gobutton-bg-cl-hover: rgb(0, 255, 0);
+    --gobutton-btm-line: 2px;
+    --gobutton-btm-line-hover-cl: transparent;
+
+    --lastp-cl: orange;
+    --lastp-bg-cl: transparent;
+    --lastp-text-shadow: unset;
+    --lastp-bg-cl-hover: var(--gobutton-bg-cl-hover);
+    
+    --scrollbar-cl: #999;
+    --scrollbar-cl-bg: #cecece;
+    
+    --hist-item-hover-bg-cl: white;
+}
+
+#engines_table {
+    background-color: #888800;
+}
+
+.gobutton { 
+    padding: 2px 7px;  
+
+}
+.labelrow td { 
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+}
+
+.btn-http-highlight span {
+    text-shadow: 1px 1px #000, 2px 2px white, 2px -1px white,-2px -1px #f2f1f1 !important;
+}
+
+.btns_copypaste_img {
+    filter: grayscale(50%) brightness(1.1);
+}
+.main_btns, .main_btns a {
+    color: #090928;
+}

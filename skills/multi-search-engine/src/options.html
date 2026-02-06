@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        
+        <style>
+            body div {
+                margin-bottom: 30px;
+            }
+            hr {
+                color: #c1c1c191;
+            }
+        </style>
+        
+        <script src="ck.js"></script>
+        <script src="options.js"></script>
+
+    </head>
+
+    <body>
+    <div>
+        <h3 style="margin-bottom: 30px">
+            Big Search 
+            <span id="curver"  ></span>
+        </h3>
+    
+        <div>
+            <label for="lang-selector"><b>Language</b></label>
+            <select id="lang-selector">
+                <option value="en">English</option>
+                <option value="zh">中文</option>
+            </select>
+        </div>
+        <br>
+        <hr>
+        
+        <div>
+            <label for="open-position-selector">New tab open <b>position</b></label>
+            <select id="open-position-selector" >
+                <option value="left-all">Left of all tabs</option>
+                <option value="right-all">Right of all tabs</option>
+                <option value="left-current">Left of current tab</option>
+                <option value="right-current">Right of current tab</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="checkbox" id="cbox_newTabFront">Bring new tab to foreground immediatly</input> <br>
+            <span style="color:gray;"><b>⚠️ Notice</b> that will make our popup UI lose focus. Chrome will even closes popup UI immediatly. If you use Vem, Vem will stop working. </span>
+        </div>
+        <br>
+        <hr>
+        
+        <div>
+            <input type="checkbox" id="cbox_enContextMenu">Enable <b>context menu</b>  <span style="text-decoration: underline;">(need restart/reenable)</span> </input> :<br>
+            <span style="color:gray;">Big Search can show a menu item when you right-click on web.</span>
+                <ul>
+                    <li>
+                        <form id="form_contextMenuBehavior">
+                            When <b>context menu clicked</b>, set selection text as search term, then: <span style="text-decoration: underline;">(need restart/reenable)</span><br>
+                            <ul>
+                                <li><input type="radio" name="contextmenu_behavior" value="popup">Open popup</input><br></li>
+                                <li><input type="radio" name="contextmenu_behavior" value="sidebar">Open sidebar</input><br></li>
+                                <li><input type="radio" name="contextmenu_behavior" value="stab">Open Big Search standalone tab</input><br></li>
+                            </ul>
+                        </form>
+                    </li>
+                </ul>
+        </div>
+        <input type="checkbox" id="cbox_copyOnContextMenuOrKey">When context menu clicked (or keyboard shortcut used), put selection text to <b>clipboard</b> also <span style="text-decoration: underline;">(need restart/reenable)</span></input>
+        <br><br>
+        <hr>
+        
+        
+        <div>
+            <input type="checkbox" id="cbox_autoSelectInputText" checked="true"><b>Auto select text</b> in inputbox when UI open</input>   
+        </div>
+        <br>
+        <hr>
+        
+        
+        
+        <div  id="div_shownew">
+        <br>
+            <input type="checkbox" id="cbox_shownew" >Show when <b>new version</b> available, at corner of addon page  (need restart/reenable)</input>
+            <br>
+            <a target="_blank" href="https://gitlab.com/garywill/releaseapps-dl/-/tree/main">.crx Download page</a>
+        
+        </div>
+        <br>
+        <hr>
+        
+        <div>
+            <input type="checkbox" id="checkbox-disable-editguicom">Disable communication with online editing-engine GUI web (need restart/reenable)</input>
+            <div style="color:gray;" >
+            Disabling it will give you more <b>security</b> (if there is any potential security hole), but you'll have to manually copy-paste JSON
+            </div>
+        </div>
+        <br>
+        <hr>
+        
+        
+
+        
+        
+        
+        <br><br>
+        <div>
+            <details hidden style="color:gray;" >
+            <summary>Other settings</summary>
+            
+            <div   >
+                <input type="checkbox"  disabled="true">(feature in the future) Context menu has sub-menus</input>
+                <div style="color:gray;" >
+                Without submenus, clicking context menu item is enough to set selection as search term in popup box.
+                </div>
+            </div>
+            <br>
+            
+
+            
+            <div>
+                <label for="back-fore-selector">(feature in the future) Bring opened tab to foreground immediatly</label>
+                <select id="back-fore-selector" disabled="true">
+                    <option value ="">Default</option>
+                    <option value ="">No</option>
+                    <option value ="">Yes</option>
+                </select>
+                <br>
+            </div>
+            <br>
+            
+            <div>
+                <input type="checkbox"  disabled="true">(feature in the future) Override if current tab is blank</input>
+            </div>
+            <br>
+            
+            </details>
+            
+            <div>
+            🤝 Thank you for choosing Big Search. It's a pure-client-side tool. You can easily search the whole Internet without any our server. This addon completely does NOT do user data collection. Welcome to our <a target="_blank" href="https://github.com/garywill/BigSearch">Source Code</a>. We'll appreciate if you help.
+            </div>
+        </div>
+        
+    
+    </div>
+    
+    </body>
+</html> 

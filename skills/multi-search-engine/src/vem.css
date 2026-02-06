@@ -1,0 +1,72 @@
+/*
+ * Big Search (大术专搜)
+ *     https://github.com/garywill/BigSearch
+ *     https://addons.mozilla.org/firefox/addon/big-search/
+ *     https://chrome.google.com/webstore/detail/big-search/ojcnjeigmgjaiolalpapfnmmhdmpjhfb
+ * 
+ * Licensed under AGPL (GNU Affero General Public License)
+ */
+
+.vemBadge {
+    pointer-events: none;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    
+    color: #2f2f2f !important;
+    text-shadow: none !important;
+    font-weight: normal ;
+    font-family: monospace , "DejaVu Sans Mono",  "Droid Sans Mono",  "Courier New", "Adobe Courier" , "Courier";
+    
+    background-color: #f1db2782;
+    border: 1px solid #64808080;
+    border-radius: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    
+    font-size: 12px;
+    z-index: 3;
+}
+
+
+.vemBadge_cataBtn {
+    bottom: 5px;
+}
+.vemBadge_goBtn {
+    right: -5px;
+    bottom: -3px;
+}
+/*.gobutton:hover .vemBadge_goBtn {
+    transform: scale(0.7);
+    transform-origin: right bottom;
+}*/
+
+.vemBadge_large {
+    transform: scale(1.7);
+    font-weight: bold ;
+}
+
+.vem_jk_badges_cont {
+    display: block;
+    position: sticky;
+    height: 0px;
+    width: 100%;
+}
+#vem_jk_badges_cont_j {
+    bottom: 0px;
+}
+#vem_jk_badges_cont_k {
+    top: 0px;
+}
+.vemBadge_jk {
+    position: absolute;
+    display: inline-table;
+    right: 0px;
+}
+#vem_badge_jk_j {
+    bottom: 0px;
+}
+#vem_badge_jk_k {
+    top: 0px;
+}
+

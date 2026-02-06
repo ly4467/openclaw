@@ -1,0 +1,62 @@
+/*
+ * Big Search (大术专搜)
+ *     https://github.com/garywill/BigSearch
+ *     https://addons.mozilla.org/firefox/addon/big-search/
+ *     https://chrome.google.com/webstore/detail/big-search/ojcnjeigmgjaiolalpapfnmmhdmpjhfb
+ * 
+ * Licensed under AGPL (GNU Affero General Public License)
+ */
+
+body {
+    --bg-cl: #f6f8fa;
+    
+    --header-bg-cl: #aeaeae;
+    --header-text-cl: white;
+    
+    --intitle-cl: #7d7d7d;
+    
+    
+    --engine-tr-hover-bg-cl: #ebf9ff;
+    
+    --ebtns-weight: unset;
+    --gobutton-cl: rgb(36, 41, 47);
+/*     --gobutton-bg-cl: #f6f8fa; */
+    --gobutton-bg-cl: var(--bg-cl);
+    
+    --cata-btns-highlight-bg-cl: #fcfcfc;
+    
+    --lastp-btm-line-cl: #d0d7de;
+    --lastp-cl: #dbf0e1;
+    --lastp-bg-cl: #2da44e;
+    --lastp-bg-cl-hover: #159030;
+    --lastp-text-shadow: unset;
+    
+    --scrollbar-cl: #999;
+    --scrollbar-cl-bg: #cecece;
+}
+
+
+
+.btn-http-highlight span {
+    text-shadow: 1px 1px #000, 2px 2px white, 2px -1px white,-2px -1px #f2f1f1 !important;
+}
+
+
+#engines_cont {
+    background-color: white;
+}
+
+.engine_tr {
+    box-shadow: 0px 1px rgba(185, 185, 185, 0.5);
+}
+.gobutton {
+    border-radius: 6px;
+    border: 1px solid #d0d7de;
+    box-shadow: rgba(27, 31, 36, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+}
+.btns_copypaste_img {
+    filter: grayscale(50%) brightness(1.1);
+}
+.main_btns, .main_btns a {
+    color: #57606a;
+}

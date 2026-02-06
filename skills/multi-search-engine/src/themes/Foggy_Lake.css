@@ -1,0 +1,174 @@
+/*
+ * Big Search (大术专搜)
+ *     https://github.com/garywill/BigSearch
+ *     https://addons.mozilla.org/firefox/addon/big-search/
+ *     https://chrome.google.com/webstore/detail/big-search/ojcnjeigmgjaiolalpapfnmmhdmpjhfb
+ * 
+ * Licensed under AGPL (GNU Affero General Public License)
+ */
+
+body {
+    --header-bg-cl: rgba(127, 156, 247, 0.51);
+    
+    --header-text-cl: #fbfbfb;
+    --header-box-shadow-cl: rgba(221, 221, 221, 0.3);
+    --intitle-cl: #077500;
+    
+    --cata-btns-weight: bold;
+    --cata-btns-cl: #4e4f57;
+    --cata-btns-tshadow: 0px 0px 4px white;
+/*     --cata-btns-tshadow: 1px 1px white, 0px 0px 4px white, 0px 0px 2px white; */
+/*     --cata-btns-highlight-tshadow: 1px 1px white; */
+    --cata-btns-bg-cl: rgba(218, 218, 219, 0.23);
+    
+    --cata-btns-hover-cl: #11111c;
+    --cata-btns-hover-bg-cl: rgba(219, 220, 225, 0.7);
+    --cata-btns-highlight-cl: #171762;
+    --cata-btns-highlight-bg-cl: #e6e7ec85;
+    --cata-btns-highlight-underline-cl: #4b4bbb;
+    
+    --labelrow-bg-cl: rgba(202, 228, 234, 0.7);
+    --labelrow-cl: #6c6969;
+    
+/*     --engine-tr-bg-cl: rgba(224, 232, 246,0.3); */
+    --engine-tr-bg-cl: rgba(204, 210, 221, 0.3);
+    --engine-tr-hover-bg-cl: rgba(0, 167, 0, 0.67);
+    
+    --enginename-td-cl: #077500;
+    --enginename-td-cl-when-tr-hover: orange;
+    --enginename-tshadow-when-tr-hover: 1px 1px black;
+    
+    --gobutton-btm-line: 3px;
+    --gobutton-cl: #353535;
+    --gobutton-cl-hover: #f0f0f0;
+    --gobutton-bg-cl: transparent;
+    
+    --gobutton-cl-when-tr-hover: #f0f0f0;
+    --gobutton-text-shadow-when-tr-hover: 1px 1px black, 0px 0px 3px black;
+    --gobutton-bg-cl-hover: rgb(7, 196, 7);
+    --gobutton-btm-line-hover-cl: orange;
+    
+    --lastp-cl-when-tr-hover: #ffea00;
+    
+    --hist-item-hover-bg-cl: rgb(192, 203, 242);
+    --hist-del-btn-cl: yellow;
+}
+.http_web {
+    --bg-img: url('bg.jpg');
+}
+.btn-http-highlight span {
+    text-shadow: 1px 1px #000, 2px 2px white, 2px -1px white,-2px -1px #f2f1f1 !important;
+}
+.addon {
+    --bg-img: url('bgaddon.webp');
+}
+
+/*
+.general_btn, .general_btn a {
+    color: blue;
+}
+*/
+
+
+.header-nav-span:hover {
+    border-bottom:2px solid ;
+    border-color:red;
+}
+
+#newver, #newver_link {
+    color:#f6f6ad; 
+}
+#btn_mobile, #btn_desktop {
+    /* text-shadow: #c1d7ff 1px 1px 2px; */
+}
+
+.cur_inputbox:focus {
+    box-shadow: 1px 1px 2px #91919155; 
+}
+
+/*
+#engines_o_cont{
+    scrollbar-color: #6d69ec #ffef068c;
+}
+#engines_o_cont::-webkit-scrollbar-thumb {
+    background-color:#6d69ec;
+}
+
+#engines_o_cont::-webkit-scrollbar-track-piece {
+    background-color: #ffef068c;
+}
+
+#catas_cont {  
+    scrollbar-color: #5b79c4 #ffffff59;
+}
+#catas_cont::-webkit-scrollbar-thumb {
+    background-color: #5b79c4;
+}
+#catas_cont::-webkit-scrollbar-track-piece {
+    background-color: #ffffff59;
+}
+*/
+
+body.addon.en {
+    --cata-btns-weight: unset;
+    /* --cata-btns-cl: black; */
+    --cata-btns-tshadow: 1px 1px 1px var(--cata-btns-cl), 0px 0px 4px white;
+}
+
+
+.cata_btn_highlight {
+    /* text-shadow: 5px 0px 2px #e6e8e5; */
+}
+
+#hist_tip {
+    color: #ddd;
+}
+
+.gobutton:hover {  
+    box-shadow: 0px 3px 10px black; 
+}
+
+#lastp {
+    box-shadow: 1px 0px 4px blue;  
+}
+.engine_tr:hover .engbtns_td #lastp { 
+    color: var(--lastp-cl-when-tr-hover); 
+    text-shadow:none;
+    box-shadow:none;
+}
+.engine_tr:hover .engbtns_td #lastp:hover { 
+    box-shadow:0px 3px 10px black;
+}
+
+
+.badge {  
+    background-color: rgba(255, 255, 0, 0.65);
+    color: black; 
+}
+#hot_badge {
+    background-color: rgba(255, 0, 0, 0.65); 
+    color: white;
+}
+
+#engines_o_cont:hover {
+/*     box-shadow: 0px 0px 5px #999; */
+}
+#engines_table:hover .enginename_td,
+.engines_table_focus .enginename_td {
+    background-color: rgba(255,255,255, 0.25);
+    border-radius: 2px;
+}
+
+#catas_cont:hover,
+.catas_cont_focus
+{
+    background-color: rgba(255,255,255,0.25);
+    
+}
+/*#engines_cont:hover {
+    background-color: rgba(200,200,200, 0.2);
+}*/
+#input_cont:hover {
+    background-color: rgba(255,255,255,0.5);
+    
+}
